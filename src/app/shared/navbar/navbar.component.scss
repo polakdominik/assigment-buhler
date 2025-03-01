@@ -20,6 +20,12 @@
       display: flex;
       justify-content: space-between;
       flex: 0 1 300px;
+
+      .user {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+      }
     }
   }
 }
