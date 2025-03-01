@@ -1,0 +1,18 @@
+[
+  {
+    "type": "scale",
+    "state": "running"
+  },
+  {
+    "type": "attacher",
+    "state": "alarm"
+  },
+  {
+    "type": "packer",
+    "state": "running"
+  },
+  {
+    "type": "closer",
+    "state": "warning"
+  }
+]
