@@ -28,4 +28,12 @@
       }
     }
   }
+
+  ul {
+    display: flex;
+
+    li {
+      flex: 0 1 200px;
+    }
+  }
 }

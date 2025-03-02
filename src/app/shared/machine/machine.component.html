@@ -1,3 +1,3 @@
 <span class="material-icons state-icon">{{ stateIcon }}</span>
-<span class="material-icons type-icon">{{ typeIcon }}</span>
+<span class="material-icons type-icon" *ngIf="!compact">{{ typeIcon }}</span>
 <span class="type-label">{{ type }}</span>

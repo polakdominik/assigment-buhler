@@ -1,9 +1,12 @@
 import { Component, HostBinding, Input } from '@angular/core';
 import { MachineModel } from '../../core/models/machine.model';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-machine',
-  imports: [],
+  imports: [
+    NgIf
+  ],
   templateUrl: './machine.component.html',
   styleUrl: './machine.component.scss'
 })
@@ -15,9 +18,12 @@ export class MachineComponent {
   @Input()
   state!: MachineModel['state'];
 
+  @Input()
+  compact!: boolean;
+
   @HostBinding('class')
   get activeClass() {
-    return [this.state];
+    return { compact: this.compact, [this.state]: true };
   }
 
 

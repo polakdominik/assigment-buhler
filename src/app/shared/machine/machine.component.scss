@@ -10,6 +10,7 @@
 
   .type-label {
     text-transform: capitalize;
+    font-size: 1.25rem;
   }
 
   .state-icon {
@@ -20,6 +21,10 @@
 
   .type-icon {
     font-size: 3rem;
+  }
+
+  &.compact {
+    padding: 1rem;
   }
 
   &.alarm, &.warning {
