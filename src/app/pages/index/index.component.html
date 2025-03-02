@@ -1,1 +1,5 @@
-<p>{{ machines$ | async | json }}</p>
+<ul *ngIf="machines$ | async as machines">
+  <li *ngFor="let m of machines">
+    <app-machine [state]="m.state" [type]="m.type"/>
+  </li>
+</ul>

@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
 import { MachineService } from '../../core/services/machine.service';
-import { AsyncPipe, JsonPipe } from '@angular/common';
+import { AsyncPipe, NgForOf, NgIf } from '@angular/common';
+import { MachineComponent } from '../../shared/machine/machine.component';
 
 @Component({
   selector: 'app-index',
   imports: [
     AsyncPipe,
-    JsonPipe
+    MachineComponent,
+    NgForOf,
+    NgIf
   ],
   templateUrl: './index.component.html',
   styleUrl: './index.component.scss'
